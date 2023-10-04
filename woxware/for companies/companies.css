@@ -1,0 +1,338 @@
+
+*{
+  margin: 0;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+/* LARGE SCREEN BACKGROUND IMAGE */
+body{
+    background-image: url(/images/Companies\ large\ screen.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.logo-text{
+    font-size: 4em;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: 5px;
+    margin-left: 4vw;
+}
+#navsection{
+    height: 5rem;
+} 
+.ulnavsection{
+    margin-top: 4vh;
+}
+.letter-space-nav a{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    padding: 18px 43px;
+};
+/* hover nav */
+div {
+    line-height: 1.5;
+}
+
+.loginbtn a{
+    text-decoration: none;
+}
+
+
+#btn {
+    min-height: 53px;
+    min-width: 166px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: relative;
+    cursor: pointer;
+   background: rgb(253, 14, 59);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    border: none;
+    margin-top: -1.5rem;
+  }
+
+  #hovebtn{
+    transition: all 0.50s ease-in-out;
+  }
+  #hovebtn:hover{
+    color: rgb(253, 14, 59);
+  }
+  
+  #btn:after {
+    content: "";
+    position: absolute;
+    left: 152px;
+    bottom: -2px;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #fffcf7;
+    transform: rotate(262deg);
+  }
+  #btn{
+    transition: all 0.45s ease-in-out;
+  }
+   #btn:hover{
+    color: #000000;
+   }
+  .nav-curve1:after {
+    content: "";
+    position: absolute;
+    right: 182px;
+    bottom: 25px;
+    border-top: 6px solid transparent;
+    border-left: 7px solid #000000;
+    transform: rotate(268deg);
+  }
+  .nav-curve2:after {
+    content: "";
+    position: absolute;
+    right: 71ch;
+    bottom: 33px;
+    border-top: 6px solid transparent;
+    border-left: 7px solid #000000;
+    transform: rotate(270deg);
+  }
+
+ /* TABLET SCREEN+MOBILE SCREEN*/
+
+  @media (max-width: 991px) {
+    body{
+      background: url(/images/companies\ mobile+tablet\ screen.jpg) fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+    }
+    .main-section-first-text {
+      margin-top: 25%;
+      font-weight: 600;
+      font-size: 4vw;
+      margin-left: 12vw
+  }
+  .main-section-second-text {
+    font-weight: 800;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: "Open Sans Extrabold", "Open Sans", sans-serif;
+    letter-spacing: -2px;
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+    font-size: 10vw;
+    line-height: 9vw;
+    margin-left: 12vw;
+  }
+  .main-paragraph-text {
+    margin-left: 14vw;
+    font-size: 3vw;
+  }
+  .primary-button {
+    font-family: 'Ropa Sans', sans-serif;
+    /* font-family: 'Valorant', sans-serif; */
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    border: 1px solid #0E1822;
+    padding: 0.8vw 1vw;
+    background-color: #0E1822;
+    background-size: 200%;
+    background-position: 200%;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+    transition-property: background-position, border, color;
+    position: relative;
+    z-index: 1;
+    margin-left: 12vw;
+    justify-content: baseline;
+  }
+    #mobilenavigation{
+      margin-left: -50px;
+    }
+    #btn{
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+
+    #offcanvasNavbar{
+      width: 40vh;
+    }
+  }
+.main-text-section{
+  margin-top: 200px;
+  color: #fff;
+}
+@media (width > 991px){
+  .main-section-first-text {
+    margin-top: 2%;
+    font-weight: 600;
+    font-size: 1vw;
+    margin-left: 12vw;
+  }
+  .main-paragraph-text {
+    margin-left: 14vw;
+    font-size: 1vw;
+}
+.main-section-second-text {
+  color: #ffffff;
+  font-weight: 800;
+  line-height: 6vw;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "Open Sans Extrabold", "Open Sans", sans-serif;
+  letter-spacing: 0vw;
+  margin-top: 0vw;
+  margin-bottom: 1vw;
+    font-size: 5vw;
+    line-height: 4vw;
+    cursor: pointer;
+    margin-left: 12vw
+}
+}
+@media (width < 590px){
+  .main-section-first-text {
+    margin-top: 25%;
+    font-weight: 600;
+    font-size: 4vw;
+    margin-left: 12vw
+}
+.main-section-second-text {
+  font-weight: 800;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "Open Sans Extrabold", "Open Sans", sans-serif;
+  letter-spacing: -2px;
+  margin-top: 0vw;
+  margin-bottom: 2vw;
+  font-size: 10vw;
+  line-height: 9vw;
+  margin-left: 12vw;
+}
+.main-paragraph-text {
+  margin-left: 14vw;
+  font-size: 3vw;
+}
+.primary-button {
+  font-family: 'Ropa Sans', sans-serif;
+  /* font-family: 'Valorant', sans-serif; */
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border: 1px solid #0E1822;
+  padding: 0.8vw 1vw;
+  background-color: #0E1822;
+  background-size: 200%;
+  background-position: 200%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  transition-property: background-position, border, color;
+  position: relative;
+  z-index: 1;
+  margin-left: 12vw;
+  justify-content: baseline;
+}
+ }
+
+.primary-button {
+  font-family: 'Ropa Sans', sans-serif;
+     /* font-family: 'Valorant', sans-serif; */
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  border: 1px solid #0E1822;
+  padding: 0.8rem 2.1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 531.28 200'%3E%3Cdefs%3E%3Cstyle%3E .shape %7B fill: %23FF4655 /* fill: %230E1822; */ %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolygon class='shape' points='415.81 200 0 200 115.47 0 531.28 0 415.81 200' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-color: #0E1822;
+  background-size: 200%;
+  background-position: 200%;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+  transition-property: background-position, border, color;
+  position: relative;
+  z-index: 1;
+  margin-left: 14vw;
+ }
+ 
+ .primary-button:hover {
+  border: 1px solid rgb(253, 14, 59);
+  color: white;
+  background-position: 40%;
+ }
+ 
+ .primary-button:before {
+  position: absolute;
+  background-color: #0E1822;
+  width: 0.2rem;
+  height: 0.2rem;
+  top: -1px;
+  left: -1px;
+  transition: background-color 0.15s ease-in-out;
+ }
+ 
+ .primary-button:hover:before {
+  background-color: white;
+ }
+ 
+ .primary-button:hover:after {
+  background-color: white;
+ }
+ 
+ .primary-button:after {
+  content: "";
+  position: absolute;
+  background: rgb(253, 14, 59);
+  width: 0.3rem;
+  height: 0.3rem;
+  bottom: -1px;
+  right: -1px;
+  transition: background-color 0.15s ease-in-out;
+ }
+ 
+ .button-borders {
+  width: fit-content;
+  height: fit-content;
+  margin-left: 2rem;
+ }
+ 
+ .button-borders:before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  top: -0.3em;
+  border: 1px solid #222c36;
+  border-bottom: 0px;
+  opacity: 0;
+ }
+ 
+ .button-borders:after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 0.5em);
+  height: 50%;
+  left: -0.3em;
+  bottom: -0.3em;
+  border: 1px solid #0E1822;
+  border-top: 0px;
+  opacity: 0;
+  z-index: 0;
+ }
+ 
+ .shape {
+  fill: #0E1822;
+ }
